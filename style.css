@@ -5,16 +5,66 @@ html {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #222;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  place-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+input:active {
+  border: none;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+.add > button {
+  background-color: hsl(120, 36%, 45%);
+}
+
+.delete > button {
+  background-color: hsl(0, 71%, 38%);
+}
+
+form > h3 {
+  padding: 0;
+  margin: 0 0 0.5rem 0;
   text-align: center;
 }
